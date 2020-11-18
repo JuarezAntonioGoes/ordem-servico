@@ -136,11 +136,10 @@ include_once '../includes/header.php';
 										Nome <input type="text" value="<?php echo $dados['nome']; ?>" readonly><br>
 										CPF <input type="text" value="<?php echo $dados['cpf']; ?>" readonly>
 										Celular <input type="text" value="<?php echo $dados['telefone']; ?>" readonly>
-										Cidade <input type="text" value="" readonly>
-										Endereço <input type="text" value="" readonly>
-										Bairro <input type="text" value="" readonly>
-										Telefone <input type="text" value="" readonly>
-										Nº <input type="text" value="" readonly>
+										Cidade <input type="text" value="<?php echo $dados['cidade']; ?>" readonly>
+										Endereço <input type="text" value="<?php echo $dados['endereco']; ?>" readonly>
+										Bairro <input type="text" value="<?php echo $dados['bairro']; ?>" readonly>
+										Nº <input type="text" value="<?php echo $dados['numero_domicilio']; ?>" readonly>
 									</form>
 								</div>
 							</div>
@@ -175,26 +174,26 @@ include_once '../includes/header.php';
 
 										<div class="input-field col s12">
 											<label for="cidade">Cidade</label>
-											<input type="text" name="cidade" id="cidade">
+											<input type="text" name="cidade" id="cidade" value="<?php echo $dados['cidade']; ?>">
 
 										</div>
 
 										<div class="input-field col s12">
 											<label for="endereco">Endereço</label>
-											<input type="text" name="endereco" id="tendereco">
+											<input type="text" name="endereco" id="endereco" value="<?php echo $dados['endereco']; ?>">
 
 										</div>
 
 										<div class="input-field col s12">
 											<label for="bairro">Bairro</label>
-											<input type="text" name="bairro" id="bairro">
+											<input type="text" name="bairro" id="bairro" value="<?php echo $dados['bairro']; ?>">
 
 										</div>
 
 
 										<div class="input-field col s12">
 											<label for="numero_residencia">Nº</label>
-											<input type="text" name="numero_residencia" id="numero_residencia">
+											<input type="text" name="numero_residencia" id="numero_residencia" value="<?php echo $dados['numero_domicilio']; ?>">
 
 										</div>
 
