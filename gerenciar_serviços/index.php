@@ -225,14 +225,13 @@ include_once '../includes/header.php';
 
 
 
+<script src="./includes/materialize.min.js"></script>
+
+<script>
+  M.AutoInit();
+</script>
 
 
 
 
 
-
-<?php
-
-// Footer
-include_once '../includes/footer.php';
-?>

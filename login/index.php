@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<title> Sistema de cadastro de clientes</title>
 	<link rel="stylesheet" href="../includes/materialize.min.css">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<!--Let browser know website is optimized for mobile-->
+	!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="../includes/materialize.min.js"></script>
 	<script src="../includes/jquery-3.4.1.min.js"></script>
@@ -73,6 +74,11 @@ if (isset($_POST['btn-entrar'])) :
 endif;
 ?>
 <style>
+	* {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+	}
+
 	.header-site {
 		background-image: url(escritorio.jpg);
 		background-position: center top;
@@ -111,13 +117,11 @@ endif;
 		height: 100vh;
 		width: 100vw;
 		background: url('./img-fundo-login.jpg') no-repeat center top fixed;
-		background-size: 100% 100vh;
+		background-size: 100%;
 	}
 
 	#tela-login {
 		margin-top: 25vh;
-		border: 2px solid #fff;
-		box-shadow: 0 0 4px 2px #555;
 		transition: transform .2s;
 	}
 
@@ -125,23 +129,41 @@ endif;
 		transform: scale(1.01);
 	}
 
-	.caixa-texto{
-		background-color: rgba(54,54,55,0.6);
+	.caixa-texto {
+		background-color: rgba(54, 54, 55, 0.9);
 		border-radius: 4px;
 		padding: 1rem;
 		transition: transform .4s;
 	}
 
-	.caixa-texto:hover{
+	.caixa-texto:hover {
 		transform: scale(1.1);
 	}
 
-	button[name="btn-entrar"]{
+	button[name="btn-entrar"] {
 		background-color: #333;
 	}
 
-	button[name="btn-entrar"]:hover{
+	button[name="btn-entrar"]:hover {
 		background-color: turquoise;
+	}
+
+	.contato {
+		background-color: #66bb6a;
+		color: white;
+		font-weight: 600;
+		font-size: 1.2rem;
+		padding: .8rem;
+		border-radius: .5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contato:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #81c784;
 	}
 </style>
 
@@ -175,7 +197,6 @@ endif;
 							<button type="submit" name="btn-entrar" class="btn-large" style="width:100%;"> Entrar </button>
 						</form>
 					</div>
-					<a href="" class="" style="color: red;">Conheça nosso Sistema</a>
 				</div>
 			</div>
 
@@ -189,9 +210,10 @@ endif;
 			<div class="row">
 				<div class="col-sm-12 caixa-texto">
 					<h1 class="text-center">Bem Vindo!</h1>
-					<p class="text-center">hhhhhhhhhhhhhh hhhhhhhh hhhhhhh hhhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh </p>
+					<p class="text-center">Projeto criado com a intenção de facilitar a gestão de serviço interno de uma empresa gerando praticidade e retorno financeiro.</p>
 					<p class="text-center">
-						<a href="" class="btn btn-danger">ENTRE EM CONTATO CONOSCO</a>
+						<br>
+						<a href="" class="contato">ENTRE EM CONTATO CONOSCO <img src="./whatsapp.png" alt="whatsapp" width="40px"></a>
 					</p>
 				</div>
 			</div>
@@ -200,32 +222,26 @@ endif;
 
 	<section class="content-site">
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
+			<div class="row" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+				<div class="col-xs-12" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
 					<h1 class="text-center">Bem Vindo!</h1>
-					<p class="text-center">hhhhhhhhhhhhhh hhhhhhhh hhhhhhh hhhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh </p>
 					<p class="text-center">
-						hhhhhhhhhhhhhh hhhhhhhh hhhhhhh hhhhhhhhhhhhh
-						hhhhhhhhhhhh hhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhh
-						hhhhhhh hhhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh hhhhhhhhhhhhhh
-						hhhhhhhh hhhhhhh hhhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh hhhhhhhhhhhhhh
-						hhhhhhhh hhhhhhh hhhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh
+						<p class="text-center">A ordem de serviço nada mais é do que um documento que formaliza um serviço que está sendo prestado. </p>
 					</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="display: flex; justify-content: center;">
 				<div class="col-sm-4">
 
 					<div class="thumbnail">
 
-						<img src="escritorio.jpg" class="img-fluid img-thumbnail" alt="">
+						<img src="imagem1.jpg" class="img-fluid img-thumbnail" alt="">
 
 						<div class="caption text-center"></div>
 
-						<h3>sleodijo</h3>
+						<h3 >Importância</h3>
 
-						<p>oijsdojo kopsjdi lfijwp
-							sdpwr fkimio
+						<p>Por meio da OS, é possível controlar o tempo, mão-de-obra e até mesmo recursos investidos na prestação de um serviço.
 						</p>
 
 					</div>
@@ -236,32 +252,14 @@ endif;
 
 					<div class="thumbnail">
 
-						<img src="escritorio.jpg" class="img-fluid img-thumbnail" alt="">
+						<img src="imagem2.jpg" class="img-fluid img-thumbnail" alt="">
 
 						<div class="caption text-center"></div>
 
-						<h3>sleodijo</h3>
+						<h3 >Planejamento</h3>
 
-						<p>oijsdojo kopsjdi lfijwp
-							sdpwr fkimio
-						</p>
 
-					</div>
-
-				</div>
-
-				<div class="col-sm-4">
-
-					<div class="thumbnail">
-
-						<img src="escritorio.jpg" class="img-fluid img-thumbnail" alt="">
-
-						<div class="caption text-center"></div>
-
-						<h3>sleodijo</h3>
-
-						<p>oijsdojo kopsjdi lfijwp
-							sdpwr fkimio
+						<p>Para garantir a realização do serviço de forma objetiva para a empresa e satisfatória para o cliente, é essencial iniciar um planejamento minucioso baseado em uma OS detalhada.
 						</p>
 
 					</div>
@@ -275,10 +273,10 @@ endif;
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 caixa-texto">
-					<h1 class="text-center">Bem Vindo!</h1>
-					<p class="text-center">OlaIMGhhhhhhhhhhhh hhhhhhhh hhhhhhh hhhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh </p>
+					<h1 class="text-center">Status do pedido!</h1>
+					<p class="text-center">É possível o cliente saber como está o andamento em relação ao serviço solicitado.</p>
 					<p class="text-center">
-						<a href="" class="btn btn-danger">Click-me</a>
+						<a href="../cliente/index.php" class="btn btn-danger">Ver status do pedido</a>
 					</p>
 				</div>
 			</div>
@@ -291,7 +289,7 @@ endif;
 			<div class="row">
 
 				<div class="col-sm-12 text-center">
-					<p>Ola Bem vindo</p>
+					<p style="display: flex; align-items: center; justify-content: center;">JobManager 2020 &copy;<small>opyright</small> </p>
 				</div>
 			</div>
 		</div>

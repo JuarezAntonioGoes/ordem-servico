@@ -112,7 +112,7 @@ if (isset($_GET['id'])) {
 
 
                 <h4>Acompanhar pedido:</h4>
-                <div class="div1 intro" style="padding: 15px;background-color: #263238 ;color:white; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center;">
+                <div class="div1 intro" style="padding: 15px;background-color: #263238 ;color:white; margin-bottom: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                     <br><img src="../upload/<?php echo $imagem ?>" alt="" width="400" height="300" style="">
                     <br>
 

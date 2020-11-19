@@ -86,17 +86,17 @@ if ($tipoUser == 'administrador') {
 
                 $('#check_senha').on('click', function() {
                     if ($('#check_senha').is(':checked')) {
-                        $("#password").prop("disabled", false);
+                        $("#senha").prop("disabled", false);
                         $("#conf_password").prop("disabled", false);
                     } else {
-                        $("#password").prop("disabled", true);
+                        $("#senha").prop("disabled", true);
                         $("#conf_password").prop("disabled", true);
                     }
                 });
             });
         </script>
 
-        <div class="container">
+        <div class="container" style="margin-top: 8rem;">
             <form action="editar_action.php?id=<?php echo $dados['id'] ?>" id="form" method="POST">
                 <div class="row">
 
@@ -135,7 +135,7 @@ if ($tipoUser == 'administrador') {
                     <div class="input-field col s12">
 
                         <label for="senha" class="active">Senha</label>
-                        <input id="senha" type="text" class="validate" name="senha" disabled>
+                        <input id="senha" type="password" class="validate" name="senha" disabled>
                         <div id="id-error">
                             <label for="senha" class="error" generated="true"></label>
                         </div>
@@ -144,7 +144,7 @@ if ($tipoUser == 'administrador') {
                     <div class="input-field col s12">
 
                         <label for="conf_password" class="active">Confirmar Senha</label>
-                        <input id="conf_password" type="text" class="validate" name="conf_senha" disabled>
+                        <input id="conf_password" type="password" class="validate" name="conf_senha" disabled>
                         <div id="id-error">
                             <label for="conf_password" class="error" generated="true"></label>
                         </div>
@@ -152,7 +152,7 @@ if ($tipoUser == 'administrador') {
 
 
                     <div class="input-field col s12">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="history.back()">Voltar</a>
                         <button type="submit" name="btn-editar" class="btn red">Editar</a>
                     </div>
                 </div>
@@ -169,5 +169,10 @@ if ($tipoUser == 'administrador') {
     echo '</div>';
 }
 
-include_once '../includes/footer.php';
 ?>
+
+<script src="./includes/materialize.min.js"></script>
+
+<script>
+  M.AutoInit();
+</script>

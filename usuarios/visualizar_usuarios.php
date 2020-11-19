@@ -16,7 +16,7 @@ if ($tipoUser == 'administrador') {
 
 
 
-            <table class="highlight">
+            <table class="highlight" style="margin-top: 13rem;">
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -120,6 +120,8 @@ if ($tipoUser == 'administrador') {
 }
 ?>
 
-<?php
+<script src="./includes/materialize.min.js"></script>
 
-include_once '../includes/footer.php';
+<script>
+  M.AutoInit();
+</script>

@@ -168,14 +168,16 @@
         transition: transform .2s;
     }
 
-    .logo-whats:hover{
+    .logo-whats:hover {
         transform: scale(1.3);
     }
 </style>
 
 <body>
     <header class="cabecalho">
-        <a style="color: white; text-decoration: none;" href="http://localhost/tcc/cliente/"><h1>JobManager</h1></a>
+        <a style="color: white; text-decoration: none;" href="http://localhost/tcc/cliente/">
+            <h1>JobManager</h1>
+        </a>
     </header>
 
     <main>
@@ -224,8 +226,11 @@
                             echo '<div class="status" style="color: #00e676"> O produto foi consertado já está disponível para a retirada. </div>';
                         }
                     }
+                } else { ?>
+                    <span>Nenhum serviço encontrado com esse ID...</span>
+                <?php
                 }
-            ?>
+                ?>
             <?php } else { ?>
                 <h2>Seja Bem vindo!</h2>
                 <span>Qualquer dúvida entre em contato pelo whatsApp...</span>

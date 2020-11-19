@@ -198,5 +198,9 @@ if ($tipoUser == 'administrador') {
     echo '<h2 style="color:red; padding: 2rem; font-weight:500;">Permissão Negada!</h2>';
     echo '</div>';
 }
+?>
+<script src="./includes/materialize.min.js"></script>
 
-include '../includes/footer.php';
+<script>
+  M.AutoInit();
+</script>
